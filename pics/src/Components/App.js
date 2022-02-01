@@ -14,7 +14,7 @@ class App extends React.Component {
     
         
     
-    console.log(this)
+    // console.log(this)
     this.setState({images:response.data.results})
   }
 
