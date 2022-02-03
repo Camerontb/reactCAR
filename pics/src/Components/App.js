@@ -2,6 +2,8 @@ import React from 'react';
 import unSplash from '../API/unSplash'
 import SearchBar from './SearchBar';
 import ImageList from './imageList';
+import Weather from './ButtonGroup';
+import ButtonGroup from './ButtonGroup';
 
 class App extends React.Component {
 
@@ -24,7 +26,8 @@ class App extends React.Component {
         <SearchBar onSubmit={this.onSearchSubmit} />
         Found: {this.state.images.length} Images
         <ImageList images={this.state.images} />
-
+        
+        
       </div>
       
     );

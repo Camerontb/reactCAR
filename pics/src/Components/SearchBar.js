@@ -1,5 +1,5 @@
 import React from "react";
-
+import ButtonGroup from "./ButtonGroup";
 class searchBar extends React.Component{
     state= {term:''}
 
@@ -13,7 +13,9 @@ class searchBar extends React.Component{
 
     render(){
         return(
-            <div className="ui segment">
+            <div>
+                <h1 className= 'head'> A Simple Photo Search</h1>
+                <div className="ui segment">
                 <form onSubmit={this.onFormSubmit} className="ui form">
                     <div className="field">
                         <label>Image Search</label>
@@ -22,9 +24,16 @@ class searchBar extends React.Component{
                              value={this.state.term} 
                              onChange={ e => this.setState({term: e.target.value})}
                         />
+                        {/* <ButtonGroup/> */}
                     </div> 
                 </form>
             </div>
+
+
+
+
+            </div>
+            
         )
     }
 }
